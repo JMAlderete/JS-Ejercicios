@@ -669,21 +669,57 @@
 // let numeros = [14,22,55,125,2,4,550,1]
 // numeroMasGrande(numeros)
 
-function multiplicarArgumentos() {
-  // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
-  // Escribe tu código aquí:
-}
+
+
+// function multiplicarArgumentos(){
+//   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
+//   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+//   // Escribe tu código aquí:
+//   let producto = 1
+  
+//   if (arguments.length > 0){
+  
+//     for (i = 0 ; i < arguments.length ; i++){
+//       producto = producto * arguments[i]
+//     }
+//       console.log(producto)
+// }
+//     else return 0
+
+//    //  OTRA FORMA - FORMA 2
+//   // if(arguments.length < 1) return 0;
+//   // var total = 1;
+//   // for(var i = 0; i < arguments.length; i++) {
+//   //   total = total * arguments[i];
+//   // }
+//   // return total
+
+//  // arguments.length < 1 ? console.log (0) : console.log (1)
+  
+
+// }
+
+// multiplicarArgumentos(5,2,5);
+
 
 // function cuentoElementos(arreglo) {
 //   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
 //   //Escribe tu código aquí
   
-//   return console.log (arreglo.length)
+//  let cantidad = 0 
+  
+//   for (let i = 0 ; i < arreglo.length ; i++){
+    
+//     if (arreglo[i] > 18) cantidad = cantidad + 1
+  
+//   }
+//    return cantidad   
+  
+//   // return console.log (arreglo.length)
   
 // }
 
-// let arreglo=[1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7]
+// let arreglo=[1,2,3,4,52,6,7,8,9,0,41,2,3,4,5,6,7,8,91,0,1,2,3,44,5,6,7]
 // cuentoElementos(arreglo)
 
 // function diaDeLaSemana(numeroDeDia) {
@@ -703,169 +739,99 @@ function multiplicarArgumentos() {
 // let numeroDeDia=2
 // diaDeLaSemana(numeroDeDia)
 
-function empiezaConNueve(n) {
-  //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero
-  //inicia con 9 y false en otro caso.
-  //Escribe tu código aquí
-}
 
-function todosIguales(arreglo) {
-  //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
-  //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí
-}
+// function empiezaConNueve(n) {
+//   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero
+//   //inicia con 9 y false en otro caso.
+//   //Escribe tu código aquí
+    
+//   let num = n.toString()
+//   if (num[0]==9){
+//     return true;
+//   }else{
+//      return false;
+//   }
+         
+// }
 
-function mesesDelAño(array) {
-  //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
-  // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
-  //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
-  // Tu código:
-}
+// let n=4
+// empiezaConNueve(n)
 
-function mayorACien(array) {
-  //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
-  //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
-  // Tu código:
-}
+// function todosIguales(arreglo) {
+//   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
+//   //retornar true, caso contrario retornar false.
+//   //Escribe tu código aquí
 
-function breakStatement(numero) {
-  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  //Guardar cada nuevo valor en un array.
-  //Devolver el array
-  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y
-  //devolver: "Se interrumpió la ejecución"
-  //Pista: usá el statement 'break'
-  // Tu código:
-}
+//   for (let i = 0 ; i < arreglo.length ; i++){
+//     if (arreglo[0] !== arreglo [i]){
+//         return false        
+//       }
+//   }
+//   return true
+// }
 
-function continueStatement(numero) {
-  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  //Guardar cada nuevo valor en un array.
-  //Devolver el array
-  //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
-  //Pista: usá el statement 'continue'
-  // Tu código:
-}
+// let arreglo = [5,5,5]
 
-function devolverPrimerElemento(array) {
-  // Devuelve el primer elemento de un array
-  // Tu código:
-}
+// todosIguales(arreglo)
 
-function devolverUltimoElemento(array) {
-  // Devuelve el último elemento de un array
-  // Tu código:
-}
 
-function obtenerLargoDelArray(array) {
-  // Devuelve el largo de un array
-  // Tu código:
-}
+// function mesesDelAño(array) {
+//   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
+//   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
+//   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
+//   // Tu código:
+    
+// let filtrados = array.filter(mes=> mes == "Enero" || mes=="Marzo" || mes == "Noviembre");
+//   if (filtrados.length < 3){
+//     return console.log ("No se encontraron los meses pedidos")
+//   } else console.log (filtrados)
 
-function incrementarPorUno(array) {
-  // "array" debe ser una matriz de enteros (int/integers)
-  // Aumenta cada entero por 1
-  // y devuelve el array
-  // Tu código:
-}
+//   }
 
-function agregarItemAlFinalDelArray(array, elemento) {
-  // Añade el "elemento" al final del array
-  // y devuelve el array
-  // Tu código:
-}
+// let array = ["Marzo","Enero","Noviembre","Diciembre", "Julio"]
+// mesesDelAño(array)
 
-function agregarItemAlComienzoDelArray(array, elemento) {
-  // Añade el "elemento" al comienzo del array
-  // y devuelve el array
-  // Pista: usa el método `.unshift`
-  // Tu código:
-}
+// function mayorACien(array) {
+//   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
+//   // Tu código:
+  
+//   let mayoresCien = array.filter (numero => numero>100 && numero <=200)
+//   console.log (mayoresCien)
+// }
 
-function dePalabrasAFrase(palabras) {
-  // "palabras" es un array de strings/cadenas
-  // Devuelve un string donde todas las palabras estén concatenadas
-  // con espacios entre cada palabra
-  // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
-  // Tu código:
-}
+// let array1 = [50, 20, 100, 101, 200, 150, 190, 0, 1] 
+// mayorACien(array1)
 
-function arrayContiene(array, elemento) {
-  // Comprueba si el elemento existe dentro de "array"
-  // Devuelve "true" si está, o "false" si no está
-  // Tu código:
-}
+// function breakStatement(numero) {
+//   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+//   //Guardar cada nuevo valor en un array.
+//   //Devolver el array
+//   //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y
+//   //devolver: "Se interrumpió la ejecución"
+//   //Pista: usá el statement 'break'
+//   // Tu código:
+  
+//   let suma = numero
+//   let arr = []
+//   for (var i = 1 ; i <= 10 ; i++){
+//     if (suma == i){
+//       console.log (suma,i)
+//       console.log ("Se interrumpió la ejecución")
+//       break
+//     }    
+//     suma = suma + 2
+//     arr.push (suma)
+//   }
+  
+//   if (suma != i){
+//     console.log (suma)
+//     console.log (arr)
+//   } 
+  
+// }
 
-function agregarNumeros(numeros) {
-  // "numeros" debe ser un arreglo de enteros (int/integers)
-  // Suma todos los enteros y devuelve el valor
-  // Tu código:
-}
-
-function promedioResultadosTest(resultadosTest) {
-  // "resultadosTest" debe ser una matriz de enteros (int/integers)
-  // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
-  // Tu código:
-}
-
-function numeroMasGrande(numeros) {
-  // "numeros" debe ser una matriz de enteros (int/integers)
-  // Devuelve el número más grande
-  // Tu código:
-}
-
-function multiplicarArgumentos() {
-  // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
-  // Escribe tu código aquí:
-}
-
-function cuentoElementos(arreglo) {
-  //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
-  //Escribe tu código aquí
-}
-
-function diaDeLaSemana(numeroDeDia) {
-  //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
-  //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
-  //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario.
-  //Escribe tu código aquí
-}
-
-function empiezaConNueve(n) {
-  //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero
-  //inicia con 9 y false en otro caso.
-  //Escribe tu código aquí
-}
-
-function todosIguales(arreglo) {
-  //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
-  //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí
-}
-
-function mesesDelAño(array) {
-  //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
-  // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
-  //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
-  // Tu código:
-}
-
-function mayorACien(array) {
-  //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
-  //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
-  // Tu código:
-}
-
-function breakStatement(numero) {
-  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  //Guardar cada nuevo valor en un array.
-  //Devolver el array
-  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y
-  //devolver: "Se interrumpió la ejecución"
-  //Pista: usá el statement 'break'
-  // Tu código:
-}
+// let numero = 2
+// breakStatement(numero)
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
@@ -874,4 +840,19 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  
+  let array = []
+  
+  for (var i = 1 ; i <= 10 ; i++){
+    if (i == 5){
+      continue
+    }
+    numero = numero + 2
+    array.push(numero)
+  }
+  console.log (array)
+  
 }
+
+let numero = 0
+continueStatement(numero)
