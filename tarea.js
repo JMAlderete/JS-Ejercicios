@@ -1,97 +1,87 @@
-function mayorMenosMenor(arr) {
-    // Obtener del array "arr" el número mayor y el menor. Devuelve la resta entre los mismos
-    // NOTA: No utilizar los métodos "min" y "max" de "Math".
-    //
-    // Tu código:
-    document.write(`El arreglo original es el: [${arr}] <br>` )
+// function mayorMenosMenor(arr) {
+//     // Obtener del array "arr" el número mayor y el menor. Devuelve la resta entre los mismos
+//     // NOTA: No utilizar los métodos "min" y "max" de "Math".
+//     //
+//     // Tu código:
+//     document.write(`El arreglo original es el: [${arr}] <br>` )
 
-    arr.sort(function (a, b) {
-        return a - b;
-    });
+//     arr.sort(function (a, b) {
+//         return a - b;
+//     });
     
-    arr.sort()
+//     arr.sort()
 
-    let minimo= parseInt(arr[0]);
-    let maximo= parseInt(arr[arr.length-1]);
+//     let minimo= parseInt(arr[0]);
+//     let maximo= parseInt(arr[arr.length-1]);
 
-    let diferencia= maximo-minimo;
+//     let diferencia= maximo-minimo;
 
-    document.write(`El arreglo ordenado es el: [${arr}] <br> <br>`)
+//     document.write(`El arreglo ordenado es el: [${arr}] <br> <br>`)
 
-    document.write(`El máximo numero dentro del arrego es el: ${maximo} <br>`);
-    document.write(`El mínimo numero dentro del arrego es el: ${minimo} <br><br>`);
-    document.write(`La diferencia entre el máximo y el minimo es: ${diferencia}<br>`);
+//     document.write(`El máximo numero dentro del arrego es el: ${maximo} <br>`);
+//     document.write(`El mínimo numero dentro del arrego es el: ${minimo} <br><br>`);
+//     document.write(`La diferencia entre el máximo y el minimo es: ${diferencia}<br>`);
 
-};
-
-
-let arr=[5, 144, 19, 68, 52, 1200, 442, 779];
-
-mayorMenosMenor(arr)
+// };
 
 
+// let arr=[5, 144, 19, 68, 52, 1200, 442, 779];
+
+// mayorMenosMenor(arr)
 
 
 
 
 
-function ingredienteEnMalEstado(menu, comida, ingrediente) {
-    // El ingrediente de cierta comida está en mal estado. Hay que sacar los ingredientes próximos a éste,
-    // ya que deben estar contaminados también.
-    // La funcion recibe un objeto "menu" que contiene las comidas del día. "comida" es un array de ingredientes.
-    // Si "ingrediente" está en el array, devolver un array con el ingrediente y los elementos en un índice de 
-    // diferencia.
-    // Ej:
-    /* let menuDelDia = {
-        raviolesConSalsa: ["Harina", "Sal", "Huevos", "Aceite", "Peceto", "Ricota"],
-        bagnaCauda: ["Ajo", "Anchoas", "Aceite", "Crema", "Papas", "Zanahorias"],
-        tallarines: ["Harina", "Pollo", "Aceite", "Huevos", "Tomates", "Cebolla"]
-    } */
-    // ingredienteEnMalEstado(menuDelDia, "raviolesConSalsa", "Peceto") devuelve => ["Aceite", "Peceto", "Ricota"];
-    // ingredienteEnMalEstado(menuDelDia, "tallarines", "Aceite") devuelve => ["Pollo", "Aceite", "Huevos"];
-    // En caso de no encontrarse el ingrediente en la comida, devolver "El menú está perfecto".
-    // NOTA: No utilizar el método "includes".
-    //
-    // Tu código:
-
-    // if (comida.findIndex(ingrediente)===-1) {
-    //     document.write("NO TOY");
-    // }else {
-    //     document.write("SI TOY")
-
-    // }
-
-    document.write(menu + "<br>")
-    document.write(comida + "<br>")
-    document.write(ingrediente + "<br>")
-
-    let indice = comida.indexOf(ingrediente);
-    console.log(indice)
 
 
-};
+// function ingredienteEnMalEstado(menu, comida, ingrediente) {
+//     // El ingrediente de cierta comida está en mal estado. Hay que sacar los ingredientes próximos a éste,
+//     // ya que deben estar contaminados también.
+//     // La funcion recibe un objeto "menu" que contiene las comidas del día. "comida" es un array de ingredientes.
+//     // Si "ingrediente" está en el array, devolver un array con el ingrediente y los elementos en un índice de 
+//     // diferencia.
+//     // Ej:
+//     /* let menuDelDia = {
+//         raviolesConSalsa: ["Harina", "Sal", "Huevos", "Aceite", "Peceto", "Ricota"],
+//         bagnaCauda: ["Ajo", "Anchoas", "Aceite", "Crema", "Papas", "Zanahorias"],
+//         tallarines: ["Harina", "Pollo", "Aceite", "Huevos", "Tomates", "Cebolla"]
+//     } */
+//     // ingredienteEnMalEstado(menuDelDia, "raviolesConSalsa", "Peceto") devuelve => ["Aceite", "Peceto", "Ricota"];
+//     // ingredienteEnMalEstado(menuDelDia, "tallarines", "Aceite") devuelve => ["Pollo", "Aceite", "Huevos"];
+//     // En caso de no encontrarse el ingrediente en la comida, devolver "El menú está perfecto".
+//     // NOTA: No utilizar el método "includes".
+//     //
+//     // Tu código:
+
+//     // if (comida.findIndex(ingrediente)===-1) {
+//     //     document.write("NO TOY");
+//     // }else {
+//     //     document.write("SI TOY")
+
+//     // }
+
+//     document.write(menu + "<br>")
+//     document.write(comida + "<br>")
+//     document.write(ingrediente + "<br>")
+
+//     let indice = comida.indexOf(ingrediente);
+//     console.log(indice)
+
+
+// };
 
 
 
-let menuDelDia = {
-        raviolesConSalsa: ["Harina", "Sal", "Huevos", "Aceite", "Peceto", "Ricota"],
-        bagnaCauda: ["Ajo", "Anchoas", "Aceite", "Crema", "Papas", "Zanahorias"],
-        tallarines: ["Harina", "Pollo", "Aceite", "Huevos", "Tomates", "Cebolla"]
-    }
+// let menuDelDia = {
+//         raviolesConSalsa: ["Harina", "Sal", "Huevos", "Aceite", "Peceto", "Ricota"],
+//         bagnaCauda: ["Ajo", "Anchoas", "Aceite", "Crema", "Papas", "Zanahorias"],
+//         tallarines: ["Harina", "Pollo", "Aceite", "Huevos", "Tomates", "Cebolla"]
+//     }
 
 
     
-ingredienteEnMalEstado ("menuDelDia", "tallarines", "Huevos");
-
-
-
-
-
-
-
-
-
-
+// ingredienteEnMalEstado ("menuDelDia", "tallarines", "Huevos");
 
 
 

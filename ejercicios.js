@@ -833,26 +833,26 @@
 // let numero = 2
 // breakStatement(numero)
 
-function continueStatement(numero) {
-  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  //Guardar cada nuevo valor en un array.
-  //Devolver el array
-  //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
-  //Pista: usá el statement 'continue'
-  // Tu código:
+// function continueStatement(numero) {
+//   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+//   //Guardar cada nuevo valor en un array.
+//   //Devolver el array
+//   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
+//   //Pista: usá el statement 'continue'
+//   // Tu código:
   
-  let array = []
+//   let array = []
   
-  for (var i = 1 ; i <= 10 ; i++){
-    if (i == 5){
-      continue
-    }
-    numero = numero + 2
-    array.push(numero)
-  }
-  console.log (array)
+//   for (var i = 1 ; i <= 10 ; i++){
+//     if (i == 5){
+//       continue
+//     }
+//     numero = numero + 2
+//     array.push(numero)
+//   }
+//   console.log (array)
   
-}
+// }
 
-let numero = 0
-continueStatement(numero)
+// let numero = 0
+// continueStatement(numero)
