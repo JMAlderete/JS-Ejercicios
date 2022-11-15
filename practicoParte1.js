@@ -3,6 +3,14 @@
 // mensaje que ya puede conducir, si la edad ingresada no es un número válido
 // indicarlo en un mensaje.
 
+// let edad = parseInt(prompt ("Ingrese su edad: "))
+
+// if (edad <1 ){
+//     document.write ("Ingrese un numero válido.")
+// } else if (edad <= 18){
+//     document.write ("Ud no tiene edad suficiente para conducir.")
+// } else document.write ("Ud ya puede conducir")
+
 
 
 // Dificultad: 🟢🟡
@@ -18,6 +26,37 @@
 // de “número erróneo”. Si el número ingresado no es válido mostrar el mensaje
 // “Introduce un número válido”.
 
+// let nota = parseInt ( prompt ("Ingrese la nota: "))
+
+// //Comprueba que sea un numero
+// if (Number(nota)!=nota){
+//     alert ("Ingrese un numero válido")
+// //Comprueba que el numero esté entre 0 y 10
+// } else if (nota >= 0 && nota <= 10){
+    
+//     if (nota <= 2.9){
+//         alert("Muy Deficiente")
+
+//     } else if (nota <= 4.9){
+//         alert("Insuficiente")
+
+//     } else if (nota <= 6.9){
+//         alert("Suficiente")
+
+//     } else if (nota == 7){
+//         alert("Bien")
+
+//     } else if (nota <= 9.9){
+//         alert("Notable")
+
+//     } else if (nota == 10){
+//         alert("Sobresaliente")
+
+//     } else alert ( "Numero Erroneo")
+    
+// //else en caso de ingresar un numero fuera del rango 0 a 10
+// } else alert ("Ingrese un numero entre 0 y 10")
+
 
 
 // Dificultad: 🟢🟡
@@ -26,12 +65,53 @@
 // guión -.
 // Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp
 
+// let array = []
+// let string = ""
+
+// let ingresoCadenas = (array,string) => array.push(string)
+
+// do{
+//     string = prompt("Ingrese Cadena de Texto: ")
+//     ingresoCadenas(array,string)
+// } while (confirm("¿Desea agregar otra cadena?") == true) 
+
+// let concatenado = array.join (" - ")
+// document.write(concatenado)
+
 
 
 // Dificultad: 🟢🟡
 // 4- Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
 // número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con
 // “cancelar” deberá indicarse la suma total de los números introducidos.
+
+// LE FALTA TODAVIA
+
+// var array = []
+// var numero 
+
+// let ingresoAArray = (array,numero) => array.push(numero)
+
+// do{
+//     numero = parseInt ( prompt ( "Ingrese un numero: " ) )
+//     if (numero == null || number(numero) !=numero ){
+//         break
+//     }else {
+        
+//         ingresoAArray(array,numero)
+//     }
+// } while (true) 
+
+// let suma = 0
+
+// for (let i = 0 ; i < array.length ; i++){
+//     suma = suma + array[i]
+// }
+
+// document.write(suma)
+
+
+
 
 
 // Dificultad: 🟢🟡🔴
@@ -48,6 +128,9 @@
 
 
 
+
+
+
 // Dificultad: 🟢🟡
 // 6- Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
 // 1
@@ -57,6 +140,13 @@
 // 55555
 // 666666
 // …….
+
+
+
+// for (let i = 1 ; i <= 30 ; i++){
+//     str = i.toString()
+//     console.log(str.repeat(i))
+// }
 
 
 
@@ -73,6 +163,17 @@
 // 1
 
 
+// do {
+//     var cantidad = parseInt(prompt("Ingrese un numero menor a 50: "))
+// }while (cantidad >50)
+
+// for (let i = cantidad ; i > 0 ; i--){
+//     str = i.toString()
+//     console.log(str.repeat(i))
+// }
+
+
+
 // Dificultad: 🟢🟡
 // 8- Crea script para generar pirámide siguiente con los números del 1 al número
 // que indique el usuario (no mayor de 50)
@@ -82,6 +183,19 @@
 // 12345
 // 123456
 // ……
+
+
+// var total = "";
+// do {
+//     var cantidad = parseInt(prompt("Ingrese un numero menor a 50: "))
+// }while (cantidad >50)
+
+// for (let i = 1 ; i <= cantidad ; i++){
+//     str = i.toString()
+//     total = total.concat(str)
+//     console.log(total)
+// }
+
 
 
 
@@ -119,6 +233,10 @@
 
 // Dificultad: 🟢🟡
 // 12- Realiza un script que genere un número aleatorio entre 1 y 99
+
+let num = Math.floor (Math.random() * 99)
+console.log (num)
+
 
 // Ejercicios con String
 
