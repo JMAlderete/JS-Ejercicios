@@ -214,11 +214,28 @@
 // 10
 
 
+// for (let i = 1 ; i <= 500 ; i++){
+   
+//     if (i % 4 == 0 && i % 9 == 0){
+//         console.log (`${i} (Multiplo de 4 y 9)`)
+//     } else if (i % 4 == 0){
+//         console.log (`${i} (Multiplo de 4)`)
+//     } else if (i % 9 == 0){
+//         console.log (`${i} (Multiplo de 9)`)
+//     } else console.log (i)
+//     if ( i % 5 == 0){
+//         console.log("---------------")
+//     } 
+//   }
+
 
 // Dificultad: 🟢🟡🔴
 // 10- Realiza un script que pida número de filas y columnas y escriba una tabla.
 // Dentro de cada una de las celdas deberá escribirse un número consecutivo en
 // orden descendente. Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1.
+
+// let filas = parseInt (prompt("Ingrese la cantidad de filas: "))
+// let columnas = parseInt (prompt("Ingrese la cantidad de columnas: "))
 
 
 
@@ -229,13 +246,31 @@
 // nombre del mayor. *
 // Nota: ver funcion Math() https://www.w3schools.com/js/js_math.asp
 
+// let nombre1 = prompt("Ingrese el primer nombre: ")
+// let edad1 = Number (prompt(`Ingrese la edad de ${nombre1}: `))
+
+// let nombre2 = prompt("Ingrese el segundo nombre: ")
+// let edad2 = Number (prompt(`Ingrese la edad de ${nombre2}: `))
+
+// let nombre3 = prompt("Ingrese el tercer nombre: ")
+// let edad3 = Number (prompt(`Ingrese la edad de ${nombre3}: `))
+
+// let mayor = Math.max (edad1, edad2, edad3)
+
+// if (mayor == edad1) console.log (`El mayor es ${nombre1} y tiene ${edad1} años`)
+
+// if (mayor == edad2) console.log (`El mayor es ${nombre2} y tiene ${edad2} años`)
+
+// if (mayor == edad3) console.log (`El mayor es ${nombre3} y tiene ${edad3} años`)
+
 
 
 // Dificultad: 🟢🟡
 // 12- Realiza un script que genere un número aleatorio entre 1 y 99
 
-let num = Math.floor (Math.random() * 99)
-console.log (num)
+// let num = Math.ceil (Math.random() * 99)
+// console.log (num)
+
 
 
 // Ejercicios con String
@@ -244,12 +279,26 @@ console.log (num)
 // Dificultad: 🟢🟡
 // 13- Realiza un script que pida un texto y lo muestre en mayúsculas.
 
+// let texto = prompt ("Ingrese un texto y yo lo pasaré a mayusculas sin costo alguno: ")
+// texto = texto.toUpperCase()
+// console.log(texto)
 
 
 // Dificultad: 🟢🟡
 // 14- Realiza un script que pida una cadena de texto y lo muestre poniendo el signo
 // – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué
 // tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.
+
+let texto = prompt ("Ingrese un texto y le pondré guiones: ")
+
+let largo = texto.length
+let caracter = ""
+let mostrar = ""
+
+for (let i = 0 ; i < largo ; i++){
+    caracter = texto.charAt(i)
+    mostrar = mostrar + "-" 
+}
 
 
 
