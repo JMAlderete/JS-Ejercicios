@@ -128,6 +128,18 @@
 
 
 
+let dni
+
+do  {
+    dni = parseInt (prompt ("Ingrese el numero de DNI: "))
+}
+while (!Number.isInteger(dni));
+  
+let letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L","C", "K", "E"]
+
+let modulo = dni % 23 
+
+console.log (`La letra del DNI es " ${letras[modulo]} "`)
 
 
 
@@ -237,6 +249,21 @@
 // let filas = parseInt (prompt("Ingrese la cantidad de filas: "))
 // let columnas = parseInt (prompt("Ingrese la cantidad de columnas: "))
 
+// let resultado = filas * columnas
+
+// document.write("<table>")
+
+// for (let i = 0 ; i < filas ; i++){
+
+//     document.write("<tr>")
+
+//     for (let j = 0 ; j < columnas ; j++){
+//         document.write("<td>" + resultado + "</td>")
+//         resultado--
+//     }
+//     document.write("</tr>")
+// }
+// document.write("</table>")
 
 
 // Ejercicios con Math
@@ -289,16 +316,21 @@
 // – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué
 // tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.
 
-let texto = prompt ("Ingrese un texto y le pondré guiones: ")
 
-let largo = texto.length
-let caracter = ""
-let mostrar = ""
 
-for (let i = 0 ; i < largo ; i++){
-    caracter = texto.charAt(i)
-    mostrar = mostrar + "-" 
-}
+// let texto = prompt ("Ingrese un texto y le pondré guiones: ")
+
+// let caracter = ""
+
+
+// for (let i = 0 ; i < texto.length ; i++){
+//     caracter = texto[i]
+    
+//     if (i == texto.length-1){
+//         document.write(caracter); 
+//     }else document.write(caracter + "-");
+    
+// }
 
 
 
@@ -307,12 +339,54 @@ for (let i = 0 ; i < largo ; i++){
 
 
 
+// let texto = prompt ("Ingrese un texto y te diré cuantas vocales tiene: ")
+// let cantidad = 0
+
+// for (let i = 0 ; i < texto.length ; i++){
+
+//     if (texto[i] == "a" || texto[i] == "e" || texto[i] == "i" || texto[i] == "o" || texto[i] == "u" || texto[i] == "A" || texto[i] == "E" || texto[i] == "I" || texto[i] == "O" || texto[i] == "U"){
+//         cantidad++
+//     }
+   
+// }
+// document.write(`En el texto " ${texto} " hay ${cantidad} vocales mayusculas o minusculas`)
+
+
+
+
 // Dificultad: 🟢🟡
 // 16- Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir,
 // si tecleo “hola que tal” deberá mostrar “lat euq aloh”.
+
+// let texto = prompt ("Ingrese un texto cualquiera y lo escribiré al reves GRATIS: ")
+
+// let caracter = ""
+// let textoInvertido = ""
+
+// for (let i = 0 ; i < texto.length ; i++){
+//     caracter = texto [i]
+//     textoInvertido = caracter + textoInvertido
+// }
+// console.log (textoInvertido)
 
 
 
 // Dificultad: 🟢
 // 17- Realiza un script que muestre la posición de la primera vocal de un texto
 // introducido por teclado.
+
+// let texto = prompt ("Ingrese un texto cualquiera y te diré en que posicion está la primera vocal que ingresaste: ")
+
+// let posicion
+
+// for (let i = 0 ; i < texto.length ; i++){
+
+//     if (texto[i] == "a" || texto[i] == "e" || texto[i] == "i" || texto[i] == "o" || texto[i] == "u" || texto[i] == "A" || texto[i] == "E" || texto[i] == "I" || texto[i] == "O" || texto[i] == "U"){
+
+//         posicion = i
+//         break
+//     }
+
+// }
+
+// console.log (posicion)
