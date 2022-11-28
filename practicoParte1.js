@@ -85,31 +85,22 @@
 // número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con
 // “cancelar” deberá indicarse la suma total de los números introducidos.
 
-// LE FALTA TODAVIA
 
-// var array = []
-// var numero 
-
-// let ingresoAArray = (array,numero) => array.push(numero)
-
-// do{
-//     numero = parseInt ( prompt ( "Ingrese un numero: " ) )
-//     if (numero == null || number(numero) !=numero ){
-//         break
-//     }else {
-        
-//         ingresoAArray(array,numero)
+// let suma = 0;
+// do {
+//     let numero = prompt("Introduce un numero");
+//     if (Number(numero) == numero) {
+//         numero = Number(numero);
+//         suma = suma + numero;
 //     }
-// } while (true) 
-
-// let suma = 0
-
-// for (let i = 0 ; i < array.length ; i++){
-//     suma = suma + array[i]
-// }
-
-// document.write(suma)
-
+//     else {
+//         // Si pulso CANCELAR ES UNDEFINED, pero si es una letra no lo es, por lo tanto tiene que mostrar en ese caso el mensaje de "NO ES UN NUMERO" unicamente. Si quito el IF me mostrará el mensaje tambien cuando pulse cancelar
+//         if (numero != undefined) {
+//             alert(numero + " No es un numero");
+//         }
+//     }
+// } while (numero != undefined);
+// document.write(suma);
 
 
 
@@ -128,18 +119,18 @@
 
 
 
-let dni
+// let dni
 
-do  {
-    dni = parseInt (prompt ("Ingrese el numero de DNI: "))
-}
-while (!Number.isInteger(dni));
+// do  {
+//     dni = parseInt (prompt ("Ingrese el numero de DNI: "))
+// }
+// while (!Number.isInteger(dni));
   
-let letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L","C", "K", "E"]
+// let letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L","C", "K", "E"]
 
-let modulo = dni % 23 
+// let modulo = dni % 23 
 
-console.log (`La letra del DNI es " ${letras[modulo]} "`)
+// console.log (`La letra del DNI es " ${letras[modulo]} "`)
 
 
 
